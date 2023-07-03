@@ -32,4 +32,4 @@ To use the ShadowCipher, follow the steps below:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://raw.githubusercontent.com/Krimson-Squad/ShadowCipher/main/LICENSE?token=GHSAT0AAAAAACBWKRWN2PTGW63TJB35VJOQZFDCIUA) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Krimson-Squad/ShadowCipher/blob/main/LICENSE) file for details.
