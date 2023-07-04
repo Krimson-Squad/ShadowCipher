@@ -1,6 +1,6 @@
 # ShadowCipher
 ![ShadowCipher](https://cdn.discordapp.com/attachments/492351145306751004/1125685119525589002/coollogo_com-28641315.gif)
-> [!] The tool/code/software is made for educational purpose, publisher or developer are not responsible for misus. We strictly suggest to follow state rules and regulations.
+> [!] The tool/code/software is made for educational purpose, publisher or developer are not responsible for misuse. We strictly suggest to follow state rules and regulations.
  
 A command-line tool to generate wordlists based on first and last name of a target user.
 
