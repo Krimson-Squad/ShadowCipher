@@ -208,16 +208,15 @@ def generate_wordlist(first_name, last_name, count):
         f"{random.choice(string.ascii_uppercase)}{last_name.capitalize()}{random.choice(string.ascii_uppercase)}",
         f"{random.choice(string.ascii_uppercase)}{last_name.capitalize()}{random.choice(string.digits)}",
         f"{random.choice(string.ascii_uppercase)}{last_name.capitalize()}{random.choice(string.punctuation)}",
+        ###### Add more variations using f-strings here [---- DO NOT REMOVE THIS COMMENT -----] ######
     ]
 
-    # Generate variations using f-strings
     variations.append(f"{first_name.capitalize()}{last_name.capitalize()}")
     variations.append(f"{first_name.lower()}{last_name.lower()}")
     variations.append(f"{first_name.capitalize()[0]}{last_name.capitalize()}")
     variations.append(f"{first_name.lower()[0]}{last_name.lower()}")
     variations.append(f"{first_name.capitalize()}{last_name.lower()}")
     variations.append(f"{first_name.lower()}{last_name.capitalize()}")
-    # Add more variations using f-strings
 
     for _ in range(count):
         wordlist.append(random.choice(variations))
