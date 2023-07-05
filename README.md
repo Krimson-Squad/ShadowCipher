@@ -9,7 +9,7 @@ A command-line tool to generate wordlists based on first and last name of a targ
 The ShadowCipher is a simple tool that allows you to generate wordlists based on first and last names. It provides various patterns and variations to create a wide range of potential words for password cracking, data analysis, or other purposes.
 
 # Preview (of terminal)
-![ShadowCipher tool preview](https://cdn.discordapp.com/attachments/492351145306751004/1126044665376948335/image.png)
+![ShadowCipher tool preview](https://cdn.discordapp.com/attachments/492351145306751004/1126045448629653514/image.png)
 
 ## Usage
 
