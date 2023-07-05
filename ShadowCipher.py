@@ -6,7 +6,7 @@ import time
 
 
 def generate_wordlist(first_name, last_name, count):
-    print("Generating wordlist...")
+    print("\033[92;1mGenerating the wordlist...\033[0m")
     start_time = time.time()
 
     wordlist = []
@@ -233,9 +233,9 @@ def generate_wordlist(first_name, last_name, count):
 def format_time(seconds):
     hours = int(seconds // 3600)
     minutes = int((seconds % 3600) // 60)
-    seconds = int(seconds % 60)
+    second = int(seconds % 60)
 
-    return f"{hours:02d}h:{minutes:02d}m:{seconds:02d}s"
+    return f"{hours:02d}h:{minutes:02d}m:{second:02d}s"
 
 
 def save_wordlist(wordlist, filename):
@@ -275,12 +275,18 @@ def main():
     time.sleep(1)
     print("1...")
     time.sleep(1)
-    print("Generating...")
     wordlist = generate_wordlist(args.first_name, args.last_name, args.count)
 
     if args.save:
         save_wordlist(wordlist, args.save)
-        print(f"Generated {len(wordlist)} words and saved it in {args.save}")
+        print(
+            "\033[92m\u2713\ufe0f Generated",
+            len(wordlist),
+            "words and saved it in",
+            args.save,
+            "\U0001F389\033[0m",
+        )
+
     else:
         print(wordlist)
 
@@ -291,20 +297,24 @@ if __name__ == "__main__":
     )
 
     print(
+        "\033[34m"
         """
 ░██████╗██╗░░██╗░█████╗░██████╗░░█████╗░░██╗░░░░░░░██╗░█████╗░██╗██████╗░██╗░░██╗███████╗██████╗░
 ██╔════╝██║░░██║██╔══██╗██╔══██╗██╔══██╗░██║░░██╗░░██║██╔══██╗██║██╔══██╗██║░░██║██╔════╝██╔══██╗
 ╚█████╗░███████║███████║██║░░██║██║░░██║░╚██╗████╗██╔╝██║░░╚═╝██║██████╔╝███████║█████╗░░██████╔╝
 ░╚═══██╗██╔══██║██╔══██║██║░░██║██║░░██║░░████╔═████║░██║░░██╗██║██╔═══╝░██╔══██║██╔══╝░░██╔══██╗
 ██████╔╝██║░░██║██║░░██║██████╔╝╚█████╔╝░░╚██╔╝░╚██╔╝░╚█████╔╝██║██║░░░░░██║░░██║███████╗██║░░██║
-╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░░╚════╝░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝"""
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░░╚════╝░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
+"""
+        "\033[0m"
     )
+
     print(
         "\033[94;1m-----------------------------------------------------------------------------------------------------------------------------------\033[0m"
     )
 
     print(
-        "\033[38;5;208mPassword WordList Generator\033[0m                            -                          \033[38;5;46mDiscord/Twitter: @rezydev\033[0m"
+        "\033[38;5;208mPassword WordList Generator\033[0m                                             \033[38;5;46mDiscord/Twitter: @rezydev\033[0m"
     )
 
     print(
